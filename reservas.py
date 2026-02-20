@@ -12,6 +12,7 @@ class Gestor:
     def criar_reserva(self, cliente, quarto, check_in, check_out):
         nova_reserva = Reserva(cliente, quarto, check_in, check_out)
         self.reservas.append(nova_reserva)
+        quarto.disponivel = False
         return nova_reserva
 
     def ver_reservas(self):

@@ -17,3 +17,4 @@ Quarto.listagem_quartos()
 
 hotel.criar_reserva(c1, q1, "27/02/2026", "03/03/2026")
 hotel.ver_reservas()
+Quarto.listagem_quartos()
