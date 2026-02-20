@@ -14,6 +14,17 @@ class Gestor:
         self.reservas.append(nova_reserva)
         quarto.disponivel = False
         return nova_reserva
+    
+    def cancelar_reserva(self, cliente_nome, numero_quarto):
+        print("\n------- CANCELAMENTO DE RESERVAS -------")
+        for reserva in self.reservas:
+            if reserva.cliente.nome == cliente_nome and reserva.quarto.numero == numero_quarto:
+                reserva.quarto.disponivel = True
+                self.reservas.remove(reserva)
+                print(f"\nReserva cancelada: {cliente_nome} (Quarto {numero_quarto}).")
+                return True
+        print("\nErro: Reserva não encontrada.")
+        return False
 
     def ver_reservas(self):
         print("\n-------- LISTAGEM DE RESERVAS --------")
