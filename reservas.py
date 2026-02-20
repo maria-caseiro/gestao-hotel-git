@@ -20,4 +20,4 @@ class Gestor:
             print("\nNenhuma reserva encontrada.")
             return
         for reserva in self.reservas:
-            print(f"\nCliente: {reserva.cliente}\nQuarto: {reserva.quarto}\nCheck-in: {reserva.check_in}\nCheck-out: {reserva.check_out}")
+            print(f"\nCliente: {reserva.cliente.nome}\nQuarto: {reserva.quarto.numero}\nCheck-in: {reserva.check_in}\nCheck-out: {reserva.check_out}")
