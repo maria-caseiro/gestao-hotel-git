@@ -15,8 +15,9 @@ class Gestor:
         return nova_reserva
 
     def ver_reservas(self):
+        print("\n-------- LISTAGEM DE RESERVAS --------")
         if not self.reservas:
-            print("Nenhuma reserva encontrada.")
+            print("\nNenhuma reserva encontrada.")
             return
         for reserva in self.reservas:
-            print(f"-------- LISTA DE RESERVAS -------- \nCliente: {reserva.cliente}\nQuarto: {reserva.quarto}\nCheck-in: {reserva.check_in}\nCheck-out: {reserva.check_out}")
+            print(f"\nCliente: {reserva.cliente}\nQuarto: {reserva.quarto}\nCheck-in: {reserva.check_in}\nCheck-out: {reserva.check_out}")
