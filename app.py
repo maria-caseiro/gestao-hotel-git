@@ -4,3 +4,4 @@ from reservas import Gestor
 
 hotel = Gestor()
 hotel.ver_reservas()
+Cliente.listagem_clientes()
